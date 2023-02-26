@@ -1,0 +1,219 @@
+<!--
+	I nostri corsi presenta le varie discipline artistiche che l'associazione artistica offre ai soci
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!--
+		Sono presenti i link a: 
+			- font di GoogleFonts
+			- fogli di stile .css che si occupano di impaginare e formattare il layout della pagina corrente e del menu di navigazione
+			- fogli di stile .css che gestiscono le media query per rendere il sito responsive per dispositivi mobile e tablet
+			- riferimento all'immagine favicon
+	-->
+	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../Stile/stilepagina.css">
+	<link rel="stylesheet" type="text/css" href="../Stile/stilemediaquerypagina.css">
+	<link rel="stylesheet" type="text/css" href="../Stile/stilemenu.css">
+	<link rel="stylesheet" type="text/css" href="../Stile/stilemediaquerymenu.css">
+	<link rel="stylesheet" type="text/css" href="../Stile/stilecorsi.css">
+	<link rel="stylesheet" type="text/css" href="../Stile/stilemediaquerycorsi.css">
+	<link rel="shortcut icon" type="image/png" href="../Immagini/favicon.ico"/>
+
+	<!--
+		Metatag per SEO:
+			- charset utilizzato
+			- descrizione 
+			- parole chiave
+			- autore del sito
+			- adattamento dei contenuti nei telefoni e nei table
+	-->
+	<meta charset="utf-8">
+	<meta name="description" content="Sito web dell'Associazione Artistica per Talenti Musicali Vivo per Lei">
+	<meta name="keywords" content="musica, corsi, eventi, music, arte, associazione, canto, strumenti musicali, registrazione, coro">
+	<meta name="author" content="Nada Cenci 730218">
+	<meta id="viewport" name="viewport" content ="width=device-width" />
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139981140-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+ 			 gtag('config', 'UA-139981140-1');
+		</script>
+
+	<!--
+		Titolo della pagina
+	-->
+	<title>I nostri corsi - Vivo per Lei</title>
+
+</head>
+<body>
+	<!-----------------------------Menu----------------------------------------------->
+	
+	<!--
+		Codice per il menu di navigazione. Esso è composto da cinque voci in linea per il PC: 
+		Homepage, Chi siamo, Corsi, Eventi, Contattaci.
+
+		Nella versione mobile/tablet le cinque voci sono nascoste e sostiuite da una sola voce: Menu.
+		Al click di essa vengono mostrate (o vengono nascoste se già visibili) le cinque voci sopra elencate.
+
+		Il menu è creato attraverso la creazione di una lista di link che madano alla pagina specificata. La voce che rappresenta la pagina corrente ha l'id actived_menu che la rende in grassetto. 
+	-->
+	<nav>
+		<div class="menu-block" id="menu-mobile-tablet">
+			<ul class="nav-ul">
+				<li><a><label for="id-show-menu" class="show-menu">Menu</label></a></li>
+			</ul>
+		</div>
+		<input id="id-show-menu" type="checkbox" role="button">
+		<div class="menu-block" id="menu-desktop">
+			<ul class="nav-ul">
+				<li><a href="index.html"> &#9834; Home Page</a></li>
+				<li><a href="chi_siamo.html">&#9834; Chi siamo</a></li>
+				<li><a id="actived-menu" href="corsi.html">&#9834; I nostri corsi</a></li>
+				<li><a href="eventi.html">&#9834; Eventi</a></li>
+				<li><a href="contattaci.html">&#9834; Contattaci</a></li>
+			</ul>
+		</div>
+	</nav>
+	<br>
+	<br>
+	<br>
+
+	<!-----------------------------header----------------------------------------------->
+
+	<!--
+		Nella parte superiore del sito è presente un titolo con il nome della pagina e un'immagine con il logo dell'associazione artistica. Poi viene mostrata una linea orizzontale.
+	-->
+	<header>
+		<h1 id="title">I nostri corsi</h1>
+		<a href="index.html"><img id="logo" src="../Immagini/logodef.png"></a>
+		<hr>
+	</header>
+	<!-----------------------------Corpo della pagina----------------------------------------------->
+
+	<!--
+		Sono presentati i vari corsi offerti dall'associazione ognuno con un'immagine rappresentativa, una descrizione e i relativi costi. Inoltre, è presente un file PDF scaricabile con l'elenco dei docenti dell'associazione.
+	-->
+
+	<p id="tax" align="center">
+		<b><i><a href="contattaci.html#subscribe">Diventa nostro socio</a></i></b> con un contributo annuale di &euro;15,00 e <em>potrai iscriverti ai nostri corsi!</em> 
+		<br>
+		Per avere pi&ugrave; informazioni sui nostri docenti scarica il seguente <b><i><a target="_new" href="../Documenti/prof_vivoperlei.pdf">PDF</a></i></b> con i loro profili!
+	</p>
+	<div class="box-line">
+		<img class="left-image" src="../Immagini/spartito.jpg"> 
+		<div class="text-right">
+			<h4 id="course">Corso di Storia della Musica</h4>
+			<ul>
+				<li>Prezzo mensile (solo corso collettivo): &euro;30,00</li>
+				<li>Prezzo annuale (solo corso collettivo): &euro;250,00</li>
+			</ul>
+			<p> 
+				Dedicato a tutti coloro che vorrebbero conoscere ed imparare le origini della musica: <b>dagli esordi della musica antica a quella classica per poi concludere con la storia della musica del XX secolo.</b> <br> Un percorso strutturato nell'arco di un anno che illustrer&aacute; i mutamenti delle singole epoche fino ad arrivare alla nostra. 
+			</p> 
+		</div>
+	</div>
+
+	<div class="box-line">
+		<img class="right-image" src="../Immagini/pianofor.jpg">
+		<div class="text-left">
+			<h4 id="course"> Corso di strumenti della musica classica</h4>
+			<ul>
+				<li>Prezzo mensile (corso individuale): &euro;45,00 </li>
+				<li>Prezzo annuale (corso individuale): &euro;400,00</li>
+				<li>Prezzo mensile (corso collettivo) : &euro;35,00</li>
+				<li>Prezzo mensile (corso collettivo) : &euro;300,00</li>
+			</ul>
+			<p> 
+				Corsi collettivi e individuali, divisi in tre livelli, per imparare a suonare gli strumenti tradizionali: <br><b>Pianoforte, Chitarra classica, Basso, Percussioni, Clarinetti, Trombe, Violino, Violoncello.</b> <br> Le lezioni sono composte da: una parte teorica (solfeggio) e una parte pratica. <div> </div> Livelli: <b>principianti, intermedi ed esperti.</b>
+				
+			</p>
+		</div>
+	</div>
+	
+	<div class="box-line">
+		<img class="left-image" src="../Immagini/guitar.jpg">
+		<div class="text-right">
+			<h4 id="course">Corso di strumenti della musica moderna</h4>
+			<ul>
+				<li>Prezzo mensile (corso individuale):  &euro;45,00 </li>
+				<li>Prezzo annuale (corso individuale):  &euro;400,00</li>
+				<li>Prezzo mensile (corso collettivo) :  &euro;35,00</li>
+				<li>Prezzo mensile (corso collettivo) :  &euro;300,00</li>
+			</ul>
+			<p>Corsi collettivi e individuali, divisi in tre livelli, per imparare a suonare gli strumenti moderni:<br> <b>Pianoforte moderno, Tastiere, Chitarra elettrica, Basso elettrico, Batteria, Saxofono.</b> <br> Le lezioni sono composte da: una parte teorica (solfeggio) e una parte pratica. <div> </div> Livelli:
+				<b>principianti, intermedi ed esperti</b>
+			</p>
+		</div>
+	</div>
+
+	<div class="box-line">
+		<img class="right-image" src="../Immagini/mic.jpg">
+		<div class="text-left">
+			<h4 id="course">Corso di canto moderno e corale</h4>
+			<ul>
+				<li>Prezzo mensile (corso individuale):  &euro;45,00 </li>
+				<li>Prezzo annuale (corso individuale):  &euro;400,00</li>
+				<li>Prezzo mensile (corso collettivo) :  &euro;35,00</li>
+				<li>Prezzo mensile (corso collettivo) :  &euro;300,00</li>
+			</ul>
+			<p>
+				Corsi collettivi e individuali, divisi in tre livelli, <b>per imparare e migliorare le tecniche del canto moderno e corale.</b> <br> Le lezioni sono composte da: una parte teorica (solfeggio) e una parte pratica (vocalizzi e canto). <br>Livelli: <b>principianti, intermedi ed esperti. </b>
+			</p>
+		</div>
+	</div>
+
+	<div class="box-line">
+		<img class="left-image" src="../Immagini/studio.png">
+		<div class="text-right">
+			<h4 id="course">Sala prove</h4>
+			<ul>
+				<li>Prezzo (all'ora): &euro;10,00 </li>
+			</ul>
+			<p> Uno spazio dedicato a tutti coloro che vogliono <b>provare</b> ed eventualmente <b>registrare</b> la loro musica.</p>
+		</div>
+	</div>
+	
+	<!-----------------------------footer----------------------------------------------->
+
+	<!--
+		Nella parte inferiore del sito sono presenti dati:
+			- Link con email fittizia al cui click si apre il programma di posta elettronica con una mail in cui è preimpostato l'indirizzo di destinazione.
+			- Link alla mappa del sito
+			- Immmagine dei loghi dei social networks con rispettivo link (Facebook, Instagram e YouTube)
+			- Copyright del sito
+	-->
+	<footer>
+		<hr>
+		<div id="footer-contact">
+			Email: <a id="mail-footer" href="mailto:nada.cenci@vivoperlei.it">nada.cenci@vivoperlei.it</a>
+		</div>
+		<div id="footer-maps">
+			<a id="mapsite-footer" href="mappa.html"> Mappa del sito </a>
+		</div>
+		<div id="footer-social">
+			Seguici su: 
+			<a href="https://www.facebook.com" target="_new"> <img class="social-logo" src="../Immagini/fb.png"></a>
+			<a href="https://www.instagram.com" target="_new"> <img class="social-logo" src="../Immagini/insta.png"></a>
+			<a href="https://www.youtube.com" target="_new"> <img class="social-logo" src="../Immagini/yt.png"></a>
+		</div>
+		<hr>
+		<div id="footer-copy"> 
+			Copyright  &copy; 2019 Nada Cenci 
+		</div>
+	</footer>
+	<br>
+	<br>
+	<br>
+	<!--
+		Banner policy dei cookie
+	-->
+	<script type="text/javascript" src="https://nibirumail.com/docs/scripts/nibirumail.cookie.min.js"> 
+    </script>
+</body>
+</html>

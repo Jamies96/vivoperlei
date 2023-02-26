@@ -1,0 +1,88 @@
+/*
+    Foglio di stile del Menu presente in ogni pagina
+*/
+
+/*
+    Allinea verticalmente il testo all'interno del menu e rende il cursore del mouse un pointer 
+*/
+.menu-block {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*
+    Elimina i punti dell'elenco non ordinato e toglie padding e margin
+*/
+ul.nav-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    Gestisce la disposizione delle voci del menu (una affiancata all'altra) e gestisce il padding
+*/
+ul.nav-ul li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+/*
+    Gestisce i collegamenti delle voci del menu modificando il colore, eliminandone la sottolineatura e gestendo padding e disposizione
+*/
+ul.nav-ul li a {
+    color: #555;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/*
+    Gestisce il colore ed elimina la sottolineatura di un link di una voce del menu quando ci si è sopra con il mouse
+*/
+ul.nav-ul li a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+/*
+    Della barra del menu modifica:
+    - allineamento del testo al centro
+    - posizione fissata
+    - larghezza
+    - colore di sfondo
+    - posizionamento in alto
+    - font  
+*/
+nav {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0px;
+    left: 0px;
+    font-size: 23px;
+    font-family: 'Courgette', cursive;
+}
+
+/*
+    Mette in grassetto la voce del menu della pagina corrente
+*/
+#actived-menu {
+    font-weight: bold;
+}
+
+/*
+    Nasconda nella modalità desktop il menu per dispositivi mobile e tablet
+*/
+#menu-mobile-tablet {
+    display: none;
+}
+
+/*
+    Nasconde la check-box che gestisce il collapse del menu in modalità per dispositivi mobile e tablet
+*/
+#id-show-menu {
+    display: none;
+}

@@ -1,0 +1,96 @@
+/*
+	Foglio di stile di I nostri corsi
+*/
+
+/*
+	Gestisce la dimensione delle immagini, aggiunge un contorno arrotondato
+*/
+.box-line img {
+	height: 100%;
+	width: 30%;
+	border:1px solid white;
+	border-radius: 50px;
+}
+
+/*
+	Modifica il font presente nella descrizione di ogni singolo corso e gestisce la dimensione dei margini
+*/
+.box-line {
+	clear: both;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	height: 40%;
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+}
+
+/*
+	Allinea a destra il testo affiancato alle immagini di sinistra
+*/
+.text-right {
+	text-align: right;
+}
+
+/*
+ 	Allinea all'interno l'elenco puntato a destra
+*/
+.text-right ul {
+	list-style-position: inside;
+}
+
+/*
+	Allinea a sinistra il testo affiancato alle immagini di destra
+*/
+.text-left {
+	text-align:left;
+}
+
+/*
+	Modifica il font e la dimensione del testo iniziale della pagina I nostri corsi
+*/
+#tax {
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+}
+
+/*
+	Elimina la sottolineatura del testo e colora il testo di bianco	
+*/
+#tax a {
+	text-decoration: none;
+	color: white;
+}
+
+/*
+	Al passaggio del cursore sul link cambia il colore del testo
+*/
+#tax a:hover {
+	text-decoration: none;
+	color: violet;
+}
+
+/*
+	Rende le immagini flottanti a sinistra e gestisce la dimensione del margine destro
+*/
+.left-image {
+	float: left;
+	margin-right: 3%;  
+}
+
+/*
+	Rende le immagini flottanti a destra e gestisce la dimensione del margine sinistro
+*/
+.right-image {
+	float: right;
+	margin-left: 3%;  
+}
+
+
+/*
+	Colora di bianco il titolo di ogni corso proposto
+*/
+#course {
+	color: white;
+}

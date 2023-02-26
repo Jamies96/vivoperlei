@@ -1,0 +1,25 @@
+/*
+	Gestisce le mediaquery dell'Home Page
+*/
+/*Stile mobile, uso di mediaquery per schermi fino a 500px gestendo le immagini*/
+@media screen and (max-width: 500px) {
+	/*
+		Gestisce le dimensioni dell'immagine centrale presente nel corpo della pagina
+	*/
+	#bodydiv  img {
+		height: 80%;
+		width: 80%;
+		display: block;
+		margin: auto;
+	}
+	/*
+		Gestisce le immagini dei volantini degli ultimi eventi annullando l'affiancamento
+	*/
+	#lastevents img {
+		height: 10%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-bottom: 2%;
+	}
+}

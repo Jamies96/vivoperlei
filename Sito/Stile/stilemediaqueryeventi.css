@@ -1,0 +1,94 @@
+/* 
+	Gestisce le mediaquery degli eventi
+*/
+
+/*
+	Stile mobile, uso di mediaquery per schermi fino a 500px, allinea ogni box degli eventi al centro
+*/
+@media screen and (max-width: 500px) {
+	/*
+		Posiziona la timeline a sinistra
+	*/
+	.timeline::after {
+		left: 31px;
+	}
+	
+	/* 
+		Modifica le dimensioni dei box e i padding
+	*/
+	.container {
+		width: 100%;
+		padding-left: 70px;
+		padding-right: 25px;
+	}
+	
+	/*
+		Assicura che ogni freccia puntino verso sinistra 
+	*/
+	.container::before {
+		left: 60px;
+		border: medium solid white;
+		border-width: 10px 10px 10px 0;
+		border-color: transparent white transparent transparent;
+	}
+
+	/* 
+		Assicura che ogni cerchio sia disposto nello stesso punto
+	*/
+	.left::after, .right::after {
+		left: 15px;
+	}
+	
+	/*
+		Fa in modo che ogni box presente a destra si comporti come i box presenti a sinistra
+	*/
+	 	.right {
+		left: 0%;
+	}
+}
+
+
+/*
+	Stile tablet, uso di mediaquery per schermi da 501px a 900px, allinea ogni box degli eventi al centro
+*/
+@media only screen and (min-width: 501px) and (max-width: 900px){
+	/*
+		Posiziona la timeline a sinistra
+	*/
+	.timeline::after {
+		left: 31px;
+	}
+
+	/* 
+		Modifica le dimensioni dei box e i padding
+	*/
+	.container {
+		width: 100%;
+		padding-left: 70px;
+		padding-right: 25px;
+	}
+	
+	/*
+		Assicura che ogni freccia puntino verso sinistra 
+	*/
+	.container::before {
+		left: 60px;
+		border: medium solid white;
+		border-width: 10px 10px 10px 0;
+		border-color: transparent white transparent transparent;
+	}
+
+	/* 
+		Assicura che ogni cerchio sia disposto nello stesso punto
+	*/
+	.left::after, .right::after {
+		left: 15px;
+	}
+	
+	/*
+		Fa in modo che ogni box presente a destra si comporti come i box presenti a sinistra
+	*/
+	.right {
+		left: 0%;
+	}
+}

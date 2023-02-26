@@ -1,0 +1,77 @@
+/*
+	Foglio di stile dell'Home-page
+*/
+
+/*
+	Sottotitolo della pagine: testo centrato	
+*/
+#subtitle {
+	text-align: center;
+}
+
+/*
+	Imposta le dimensioni dell'immagine presente nel body e la centra orizzontalmente	
+*/
+#bodydiv img {
+	height: 80%;
+	width: 60%;
+	display: block;
+	margin: auto;
+}
+
+/*
+	Modifica il font da utilizzare all'interno del body: decide il tipo di font, la grandezza, l'allineamento e dispone il testo in corsivo
+*/
+#bodydiv {
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	padding-right: 5%;
+	padding-left: 5%;
+	text-align: center;
+	font-style: italic;
+}
+
+/*
+	Dimensiona le immagini dei volantini degli ultimi eventi, disponendoli uno di fianco all'altro
+*/
+#lastevents img {
+   height: 35%;
+   width: 27%;
+   margin-left: 5%;
+   display: block;
+   float: left;
+   margin-bottom: 2%;
+}
+
+/* 
+	Modifica il colore dei collegamenti inserendo il grassetto nel testo di presentazione ed elimina la sottolineatura del testo
+*/
+.link {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+/*
+	Al passaggio del cursore la scritta cambia colore e diventa blu	
+*/
+a:hover {
+	color: violet;
+}
+
+/*
+	Dispone la citazione in corsivo
+*/
+#quote {
+	font-style: italic;
+}
+
+/*
+Modifica le dimensioni del testo dopo il footer
+*/
+
+.brows {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+
+}

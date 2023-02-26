@@ -1,0 +1,61 @@
+/*
+	Gestisce le mediaquery per le caratteristiche comuni di ogni pagina
+*/
+
+/*
+	Stile mobile, uso di mediaquery per schermi fino a 500px, gli elementi del footer vengono disposti in verticale
+*/
+@media screen and (max-width: 500px) {
+	/*
+		Evita l'affiancamento degli altri elementi all'email dei contatti (fittizia) 
+	*/
+	#footer-contact {
+		clear: left;
+		width: 100%;
+	}
+
+	/*
+		Evita l'affiancamento degli altri elementi alla Mappa del sito 
+	*/
+	#footer-maps {
+		clear: left;
+		width: 100%;
+	} 
+	/*
+		Evita l'affiancamento degli altri elementi agli elementi social 
+	*/
+	#footer-social {
+		clear: left;
+		width: 100%;
+	}
+}
+
+/*
+	Stile tablet, uso di mediaquery per schermi da 501px a 900px, gli elementi del footer vengono disposti in verticale
+*/
+@media only screen and (min-width: 501px) and (max-width: 900px){
+	/*
+		Evita l'affiancamento degli altri elementi all'email dei contatti (fittizia) 
+	*/
+	#footer-contact {
+		clear: left;
+		width: 100%;
+	}
+
+	/*
+		Evita l'affiancamento degli altri elementi alla Mappa del sito 
+	*/
+
+	#footer-maps {
+		clear: left;
+		width: 100%;
+	} 
+	/*
+		Evita l'affiancamento degli altri elementi agli elementi social 
+	*/
+	#footer-social {
+		clear: left;
+		width: 100%;
+	}
+	
+}

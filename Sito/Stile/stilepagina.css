@@ -1,0 +1,125 @@
+/*
+	Foglio di stile che raggruppa le caratteristiche grafiche comuni di ogni pagina del sito.
+*/
+
+/*
+	Fa si che la pagina html occupi tutto lo spazio disponibile sullo schermo.
+*/
+html {
+	height: 100%;
+}
+
+/*
+	Modifica:
+	- grandezza, colore e font da utilizzare nella pagina (non nei titoli)
+	- sfondo del sito creato con due colori sfumati attraverso l'utilizzo del gradiente (non ripetuto e fisso, nel senso che non scrolla quando si scrolla la pagina)
+*/
+body {
+	font-family: 'Arial', sans-serif;
+	font-size: 16px;
+	background-image: linear-gradient(to top right, #000 20%, #333 40%, #4EE2EC 120%);
+	color: white;
+	height: auto;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+/*
+	Stile del titolo della pagine: testo centrato e font di Google
+*/
+#title {
+	text-align: center;
+	font-family: 'Courgette', cursive;
+}
+
+
+/*
+	Definisce le dimensioni (in pixels) delle icone dei social networks nel footer della pagina
+*/
+.social-logo {
+	width: 25px;
+	height: 25px;
+}
+
+/*
+	Colora di bianco l'email fittizia nel footer ed elimina la sottolineatura
+*/
+#mail-footer {
+	text-decoration: none;
+	color: white;
+}
+/*
+	Al passaggio del cursore sulla mail del footer, il testo cambia colore
+*/
+#mail-footer:hover {
+	color: violet;
+}
+
+/*
+	Colora di bianco il link alla Mappa del sito nel footer ed elimina la sottolineatura
+*/
+#mapsite-footer {
+	text-decoration: none;
+	color: white;
+}
+
+/*
+	Al passaggio del cursore sul link della Mappa del sito il testo cambia colore
+*/
+#mapsite-footer:hover {
+	color: violet;
+}
+
+ 
+ /*
+ 	Pone la mail fittizia a sinistra del footer (e della pagina) e le assegna circa un terzo dello spazio orizzontale
+ */
+#footer-contact {
+	float: left;
+	width: 30%;
+}
+
+/*
+ 	Pone il link alla mappa del sito fittizia a destra della mail fittizia (al centro della pagina) e le assegna circa un terzo dello spazio orizzontale
+ */
+#footer-maps {
+	float: left;
+	width: 40%;
+} 
+
+/*
+ 	Pone i link ai social network a destra del link alla mappa del sito (al destra della pagina) e le assegna circa un terzo dello spazio orizzontale
+ */
+#footer-social {
+	float: left;
+	width: 30%;
+}
+
+/*
+ 	Assegna alla scritta di copyright tutto lo spazio orizzontale
+ */
+#footer-copy {
+	width: 100%;
+}
+
+/*
+	Mette il testo centrato in tutti gli elementi del footer e cambia l'interlinea
+*/
+footer {
+	text-align: center;
+	line-height: 3;
+	clear: both;
+}
+
+/*
+ 	Modifica le dimensioni del logo e lo centra orizzontalmente nella pagina
+ */
+#logo {
+	width: 140px; 
+	height: auto;
+	margin: auto;
+	display: block;
+	
+}
+

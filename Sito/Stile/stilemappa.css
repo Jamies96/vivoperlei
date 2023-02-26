@@ -1,0 +1,39 @@
+/*
+	Foglio di stile per la Mappa del sito
+*/
+
+/*
+ 	Elimina i  punti dell'elenco della mappa del sito
+*/
+#listitem li {
+	list-style-type: none;
+}
+
+/*
+	Modifica il testo dell'elenco:
+	- font
+	- grandezza
+	- elimina la sottolineatura
+	- colora il testo di bianco
+*/
+#listitem li a {
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+	color: white; 
+}
+
+/*
+	Al passaggio del cursore sui link cambia il colore del testo
+*/
+#listitem li a:hover{
+	color: violet;
+}
+
+/*
+	Annulla il padding permettendo l'allineamento corretto al centro dell'elenco
+*/
+#listitem {
+	text-align: center;
+	padding: 0px;
+}

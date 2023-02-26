@@ -1,0 +1,75 @@
+/*
+	Gestisce le mediaquery di Chi siamo
+*/
+/*stile mobile, uso di mediaquery per i schermi fino a 500px adattano il video*/
+@media screen and (max-width: 500px) {
+	/*
+	Ridimensione la larghezza del video
+	*/
+	video {
+		width: 80%;
+		margin: auto;
+	}
+	/*
+		Mostra la galleria fotografica per la versione mobile	
+	*/
+
+	#mob {
+		display: block;
+		height: auto;
+		width: auto;
+		margin-right: auto;  
+		margin-left:  auto;
+	}
+	/*
+		Nasconde la galleria fotografica per la versione desktop
+	*/
+	#desk {
+		display: none;
+	}
+}
+
+/*stile tablet, uso di mediaquery per schermi da 501px a 900px, adattano il video*/
+@media only screen and (min-width: 501px) and (max-width: 900px){
+	/*
+	Ridimensione la larghezza del video
+	*/
+	video {
+		width: 60%;
+		margin: auto;
+	}
+	/*
+		Mostra la galleria fotografica per la versione tablet
+	*/
+	#mob {
+		display: block;
+		height: auto;
+		width: auto;
+		margin-right: auto;  
+		margin-left:  auto;
+		
+	}
+	/*
+		Nasconde la galleria fotografica per la versione desktop
+	*/
+
+	#desk {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 901px) {
+
+	/*
+		Nasconde la galleria fotografica per la versione mobile e tablet
+	*/
+	#mob {
+		display: none;
+	}
+	/*
+		Mostra la galleria fotografica per la versione desktop
+	*/
+	#desk {
+		display: table;
+	}
+}

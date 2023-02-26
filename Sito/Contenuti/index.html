@@ -1,0 +1,184 @@
+<!--
+	Homepage del sito con la presentazione dell'associazione artistica e i collegamenti agli ultimi eventi	
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<!--
+		Sono presenti i link a: 
+			- font di GoogleFonts
+			- fogli di stile .css che si occupano di impaginare e formattare il layout della pagina corrente e del menu di navigazione
+			- fogli di stile .css che gestiscono le media query per rendere il sito responsive per dispositivi mobile e tablet
+			- riferimento all'immagine favicon
+	-->
+	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../Stile/stilepagina.css">
+	<link rel="stylesheet" type="text/css" href="../Stile/stilemediaquerypagina.css">
+	<link rel="stylesheet" type="text/css" href="../Stile/stilemenu.css">
+	<link rel="stylesheet" type="text/css" href="../Stile/stilemediaquerymenu.css">
+	<link rel="stylesheet" type="text/css" href="../Stile/stileindex.css">
+	<link rel="stylesheet" type="text/css" href="../Stile/stilemediaqueryindex.css">
+	<link rel="shortcut icon" type="image/png" href="../Immagini/favicon.ico"/>
+
+	<!--
+		Metatag per SEO:
+			- charset utilizzato
+			- descrizione 
+			- parole chiave
+			- autore del sito
+			- adattamento dei contenuti nei telefoni e nei table
+	-->
+	<meta charset="utf-8">
+	<meta name="description" content="Sito web dell'Associazione Artistica per Talenti Musicali Vivo per Lei">
+	<meta name="keywords" content="musica, corsi, eventi, music, arte, associazione, canto, strumenti musicali, registrazione, coro">
+	<meta name="author" content="Nada Cenci 730218">
+	<meta id="viewport" name="viewport" content ="width=device-width" />
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139981140-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+ 			 gtag('config', 'UA-139981140-1');
+		</script>
+	<!--
+		Titolo della pagina
+	-->
+	<title>Home Page - Vivo per Lei</title>
+</head>
+<body>
+
+	<!-----------------------------Menu----------------------------------------------->
+	
+	<!--
+		Codice per il menu di navigazione. Esso è composto da cinque voci in linea per il PC: 
+		Homepage, Chi siamo, Corsi, Eventi, Contattaci.
+
+		Nella versione mobile/tablet le cinque voci sono nascoste e sostiuite da una sola voce: Menu.
+		Al click di essa vengono mostrate (o vengono nascoste se già visibili) le cinque voci sopra elencate.
+
+		Il menu è creato attraverso la creazione di una lista di link che madano alla pagina specificata. La voce che rappresenta la pagina corrente ha l'id actived_menu che la rende in grassetto. 
+	-->
+	
+	<nav>
+		<div class="menu-block" id="menu-mobile-tablet">
+			<ul class="nav-ul">
+				<li><a><label for="id-show-menu" class="show-menu">Menu</label></a></li>
+			</ul>
+		</div>
+		<input id="id-show-menu" type="checkbox" role="button">
+		<div class="menu-block" id="menu-desktop">
+			<ul class="nav-ul">
+				<li><a id="actived-menu" href="index.html"> &#9834; Home Page</a></li>
+				<li><a href="chi_siamo.html">&#9834; Chi siamo</a></li>
+				<li><a href="corsi.html">&#9834; I nostri corsi</a></li>
+				<li><a href="eventi.html">&#9834; Eventi</a></li>
+				<li><a href="contattaci.html">&#9834; Contattaci</a></li>
+			</ul>
+		</div>
+	</nav>
+	<br>
+	<br>
+	<br>
+
+	<!-----------------------------header----------------------------------------------->
+
+	<!--
+		Nella parte superiore del sito sono presenti due titoli con il nome e il sottotitolo del sito e un'immagine con il logo dell'associazione artistica. Poi viene mostrata una linea orizzontale.
+	-->
+	
+	<header>
+		<h1 id="title">Vivo per Lei</h1>
+		<h3 id="subtitle"> Associazione Artistica per Talenti Musicali</h3>
+		<a href="index.html"> <img id="logo"  src="../Immagini/logodef.png"> </a>
+		<hr>
+	</header>
+
+	<!-----------------------------Corpo della pagina----------------------------------------------->
+	
+	<!-- 
+		Nel corpo della pagina sono presenti i paragrafi d'introduzione al sito con dei riferimenti ai link per accedere alle altre pagine. 
+		Inoltre, è presente un'immagine legata al mondo della musica.
+
+		Dopo le descrizioni sono riportate tre immagini che rappresentano i volantini degli ultimi eventi organizzati. Le immagini hanno i link all'evento specifico.
+	-->
+	<div id="bodydiv">
+		<p>
+			Vivo per Lei - Associazione Artistica per Talenti Musicali da pi&ugrave; di 20 anni sul territorio lodigiano vuole dare una nuova immagine alla musica.
+			<br>
+			<br>
+			Siete appassionati di musica? Vorreste diventare dei professionisti? Venite a vedere <a class="link" href="corsi.html">i nostri corsi!</a>
+			<br>
+			Non solo corsi ma anche <a class="link" href="eventi.html">eventi</a> quali concerti, concorsi e tanti altri per vivere la musica in tutte le sue sfumature.
+			<br>
+			<br>
+			Siete ancora in dubbio?
+			<br>
+			Seguiteci sui nostri profili social (<a class="link" target="_new" href="https://www.facebook.com">Facebook</a>, <a target="_new" class="link" href="https://www.instagram.com">Instagram</a> e <a target="_new" class="link" href="https://www.youtube.com">Youtube</a>) per farvi un'idea di cosa significa appartenere alla grande famiglia di Vivo per Lei.
+			<br>
+			<br>
+			Cosa aspettate? <a class="link" href="contattaci.html#subscribe"> Iscrivetevi subito!</a>
+		</p>
+		<img src="../Immagini/heartmusic.jpg">
+		<p id="quote">
+			"Tra l'amore e la musica c'&egrave; questa differenza: l'amore non pu&oacute; dare l'idea della musica, la musica pu&oacute; dare l'idea dell'amore."
+			<br>
+			Hector Berlioz, Memorie, 1870
+		</p>
+
+		<h3>I nostri ultimi eventi</h3>
+		<div id="lastevents">
+			<a href="eventi.html#event1"><img src="../Immagini/saggio.png"></a>
+			<a href="eventi.html#event2"><img src="../Immagini/volantinoMCF.png"></a>
+			<a href="eventi.html#event3"><img src="../Immagini/concertobene.png"></a>
+		</div>
+	</div>
+
+	
+
+	<!-----------------------------footer----------------------------------------------->
+
+	<!--
+		Nella parte inferiore del sito sono presenti dati:
+			- Link con email fittizia al cui click si apre il programma di posta elettronica con una mail in cui è preimpostato l'indirizzo di destinazione.
+			- Link alla mappa del sito
+			- Immmagine dei loghi dei social networks con rispettivo link (Facebook, Instagram e YouTube)
+			- Copyright del sito
+	-->
+	
+	<footer>
+		<hr>
+		<div id="footer-contact">
+			Email: <a id="mail-footer" href="mailto:nada.cenci@vivoperlei.it">nada.cenci@vivoperlei.it</a>
+		</div>
+		<div id="footer-maps">
+			<a id="mapsite-footer" href="mappa.html"> Mappa del sito </a>
+		</div>
+		<div id="footer-social">
+			Seguici su: 
+			<a href="https://www.facebook.com" target="_new"> <img class="social-logo" src="../Immagini/fb.png"></a>
+			<a href="https://www.instagram.com" target="_new"> <img class="social-logo" src="../Immagini/insta.png"></a>
+			<a href="https://www.youtube.com" target="_new"> <img class="social-logo" src="../Immagini/yt.png"></a>
+		</div>
+		<hr>
+		<div id="footer-copy"> 
+			Copyright  &copy; 2019 Nada Cenci 
+		</div>
+	</footer>
+	<hr>
+	<p class="brows"> Sito ottimizzato per i seguenti browser:</p> 
+	<p class="brows"> Microsoft Edge 44.17763.1.0 (e versioni superiori), Google Chrome Versione 74.0.3729.169 (e versioni superiori), Firefox Versione 66.0.5 (e versioni superiori) e Opera 60.0.3255.109 (e versioni superiori).</p>
+	<br>
+	<br>
+	
+	<!--
+		Banner policy dei cookie
+	-->
+	<script type="text/javascript" src="https://nibirumail.com/docs/scripts/nibirumail.cookie.min.js"> 
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+/* 
+	Gestisce le mediaquery del menu	
+*/
+
+/*
+	Stile mobile, uso di mediaquery per schermi fino a 500px, menu adattabile attraverso l'uso di una checkbox che comprime il menu in una sola voce. Se il menu viene cliccato allora mostra le altre voci sotto forma di una lista verticale
+*/
+@media screen and (max-width: 500px) {
+	/*
+		Gestisce la posizione delle voci del menu (una sopra l'altra)
+	*/
+	ul.nav-ul li {
+		display: block;
+	}
+	/*
+		Mostra il menu nei dispositivi mobile (unica voce con scritto Menu) 
+	*/
+	#menu-mobile-tablet {
+		display: block;
+	}
+	/*
+		Nasconde il menu versione desktop
+	*/
+	#menu-desktop {
+		display: none;
+	}
+	/*
+		Mostra al click del menu nei dispositivi mobile le voci presenti nella versione desktop
+	*/
+	#id-show-menu[type="checkbox"]:checked + #menu-desktop {
+		display: block;
+	}
+	/*
+		Fa sì che la voce Menu occupi tutto lo spazio orizzontale
+	*/
+	label { 
+		display: block; 
+		width: 100%; 
+	}
+}
+
+/*
+	Stile tablet, uso di mediaquery per schermi da 501px a 900px, menu adattabile attraverso l'uso di una checkbox che comprime il menu in una sola voce. Se il menu viene cliccato allora mostra le altre voci sotto forma di una lista verticale
+*/
+@media only screen and (min-width: 501px) and (max-width: 900px){
+	/*
+		Gestisce la posizione delle voci del menu (una sopra l'altra)
+	*/
+	ul.nav-ul li {
+		display: block;
+	}
+	/*
+		Mostra il menu nei tablet (unica voce con scritto Menu) 
+	*/
+	#menu-mobile-tablet {
+		display: block;
+	}
+	/*
+		Nasconde il menu versione desktop
+	*/
+	#menu-desktop {
+		display: none;
+	}
+	/*
+		Mostra al click del menu nei tablet le voci presenti nella versione desktop
+	*/
+	#id-show-menu[type="checkbox"]:checked + #menu-desktop {
+		display: block;
+	}
+	/*
+		Fa sì che la voce Menu occupi tutto lo spazio orizzontale
+	*/
+	.nav-ul label { 
+		display: block; 
+		width: 100%; 
+	}
+}

@@ -1,0 +1,52 @@
+/*
+	Gestisce le mediaquery per Contattaci
+*/
+
+/*Stile mobile, uso di mediaquery per schermi fino a 500px, gestendo l'allineamento delle informazioni e di scrivici*/
+@media screen and (max-width: 500px) {
+	/*
+		Allinea il testo delle informazioni al centro e gestisce i padding evitando l'affiancamento con la form
+	*/
+	#info {
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-bottom: 5%;
+		text-align: center;
+	}
+	/*
+	Allinea il testo della form al centro e gestisce i padding evitando l'affiancamento con le informazioni
+	*/
+	#form {
+		width: 80%;
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-bottom: 5%;
+		text-align: center;
+	}
+
+}
+
+/*
+	Stile tablet, uso di mediaquery per schermi da 501px a 900px, gestendo l'allineamento delle informazioni e di scrivici
+*/
+@media only screen and (min-width: 501px) and (max-width: 900px){
+	/*
+		Allinea il testo delle informazioni al centro e gestisce i padding evitando l'affiancamento con la form
+	*/
+	#info {
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-bottom: 5%;
+		text-align: center;
+	}
+	/*
+	Allinea il testo della form al centro e gestisce i padding evitando l'affiancamento con le informazioni
+	*/
+	#form {
+		width: 80%;
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-bottom: 5%;
+		text-align: center;
+	}
+}

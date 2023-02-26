@@ -1,0 +1,85 @@
+/*
+	Foglio di stile di Chi siamo
+*/
+
+/*
+	Imposta le dimensioni e i bordi del video inserito nella pagina
+*/
+video {
+	width: 40%;
+	height: 30%;
+	border: 1px solid white;
+}
+
+/*
+	Definisce le caratteristiche del font da utilizare nel corpo della pagina e il padding
+*/
+#bodydiv {
+	padding-left: 5%;
+	padding-right: 5%; 
+	font-family: "Arial", sans-serif;
+	font-size: 18px;
+}
+
+/*
+	Colora di bianco ed elimina la sottolineatura dei link presenti nel corpo della pagina
+*/
+#bodydiv a {
+	text-decoration: none;
+	color: white;
+}
+
+/*
+	Al passaggio del cursore cambia il colore del testo
+*/
+#bodydiv a:hover {
+	color:violet;
+}
+
+/*
+	Allinea al centro il testo e la tabella e imposta il font del testo
+*/
+#gallery {
+	text-align: center;
+	font-family: "Arial", sans-serif;
+	font-size: 18px;
+	
+}
+
+/*
+	Imposta i margini automatici e centra la tabella
+*/
+
+#gallery table {
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+/*
+	Modifica le dimensioni delle immagini presenti nella tabella
+*/
+
+#gallery img {
+	width: 350px;
+	height: 350px;	
+	border: 3px solid white;
+}
+
+/*
+	Al passaggio del cursore sulle immagini i bordi cambiano colore
+*/
+ #gallery img:hover {
+ 	border-color: violet;
+ }
+
+/*
+	Imposta i paddings e il font del testo.
+*/
+
+#founder {
+	padding-left: 0%;
+	padding-right: 0%; 
+	font-family: "Arial", sans-serif;
+	font-size: 18px;
+}

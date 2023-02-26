@@ -1,0 +1,104 @@
+/*
+	Gestisce le mediaquery di I nostri corsi
+*/
+
+/*
+	Stile mobile, uso di mediaquery per schermi fino a 500px, ridefinisce le posizioni tra immagini e testi della descrizione
+*/
+@media screen and (max-width: 500px) {
+	/*
+		Gestisce la dimensione delle immagini e dei margini di ogni corso
+	*/
+	.box-line img{
+		height: 100%;
+		width: 80%;
+		margin-right: 10%;  
+		margin-left:  10%;
+		margin-bottom: 5%;
+		clear: both;
+	}
+	/*
+		Evita che la descrizione di ogni corso venga affiancata alla relativa immagine ma si posizioni al di sotto
+	*/
+	.box-line {
+		clear: both;
+		margin-left: 10%;
+		margin-right: 10%;
+		height: auto;
+	}
+	/*
+		Allinea il testo al centro di ogni corso con le descrizioni a destra
+	*/
+	.text-right {
+		text-align: center;
+	}
+	/* 
+		Sistema i punti dell'elenco puntato delle descrizioni a destra vicino al testo
+	*/
+	.text-right ul {
+		list-style-position: inside;
+	}
+	/* 
+		Sistema i punti dell'elenco puntato delle descrizioni a sinistra vicino al testo
+	*/
+	.text-left ul {
+		list-style-position: inside;
+	}
+	/*
+		Allinea il testo al centro di ogni corso con le descrizioni a sinistra
+	*/
+	.text-left {
+		text-align:center;
+	}
+}
+
+/*
+	Stile tablet, uso di mediaquery per schermi da 501px a 900px, ridefinisce le posizioni tra immagini e testi della descrizione
+*/
+@media only screen and (min-width: 501px) and (max-width: 900px){
+	/*
+		Gestisce la dimensione delle immagini e dei margini di ogni corso
+	*/
+	.box-line img{
+		height: 100%;
+		width: 80%;
+		margin-right: 10%;  
+		margin-left:  10%;
+		margin-bottom: 5%;
+		clear: both;
+	}
+	/*
+		Evita che la descrizione di ogni corso venga affiancata alla relativa immagine ma si posizioni al di sotto
+	*/
+	.box-line {
+		clear: both;
+		margin-left: 10%;
+		margin-right: 10%;
+		height: auto;
+	}
+
+	/*
+		Allinea il testo al centro di ogni corso con le descrizioni a destra
+	*/
+	.text-right {
+		text-align: center;
+	}
+	/* 
+		Sistema i punti dell'elenco puntato delle descrizioni a destra vicino al testo
+	*/
+	.text-right ul {
+		list-style-position: inside;
+	}
+	/* 
+		Sistema i punti dell'elenco puntato delle descrizioni a sinistra vicino al testo
+	*/
+	.text-left ul {
+		list-style-position: inside;
+	}
+	/*
+		Allinea il testo al centro di ogni corso con le descrizioni a sinistra
+	*/
+	.text-left {
+		text-align:center;
+	}
+}

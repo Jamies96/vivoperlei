@@ -1,0 +1,88 @@
+/*
+	 Foglio di stile di Contattaci
+*/
+
+/*
+	Gestisci le dimensioni dei padding
+*/
+#info {
+	padding-right: 5%;
+	padding-bottom: 5%;
+}
+
+/*
+	Modifica la dimensione della form, rendendola flottante e gestendone il padding sinistro
+*/
+#form {
+	float: left;
+	width: 45%;
+	padding-left: 5%;
+}
+
+/*
+	Modifica il font e la dimensione del font all'interno del corpo della pagina
+*/
+#bodydiv {
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+}
+
+/*
+	Modifica la dimensione degli input all'interno della form
+*/
+input {
+	width: 80%;
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+}
+
+/*
+ 	Modifica la dimensione del testo all'interno della form
+*/
+textarea {
+	resize: none;
+	width: 80%;
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+}
+
+/*
+	Elimina la sottolineatura e colora il testo di bianco ai link presenti all'interno dei contatti
+*/
+#info a {
+	text-decoration: none;
+	color: white;
+}
+#info a:hover {
+	color: violet;
+}
+
+/*
+	Modifica le caratteristiche del bottone di invio della mail:
+	- bordi arrotondati
+	- colore di sfondo azzurro
+	- testo bianco 
+	- font e dimensione del font
+*/
+form button {
+ 	border-radius: 12px;
+ 	background-color: #008CBA;
+ 	font-family: Arial, sans-serif;
+	font-size: 18px;
+ 	color: white; 	
+}
+
+/*
+	Allinea il testo sulla privacy al centro
+*/
+#privacy {
+ 	text-align: center;
+}
+/*
+	Gestisce i padding della form  subscribe e centra il testo della form	
+*/
+#subscribe {
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align: center;
+}

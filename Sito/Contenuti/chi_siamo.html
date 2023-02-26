@@ -1,0 +1,221 @@
+<!--
+	Chi siamo descrive brevemente di cosa si occupa l'associazione, mostra le collaborazioni e visualizza un video di presentazione
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<!--
+		Sono presenti i link a: 
+			- font di GoogleFonts
+			- fogli di stile .css che si occupano di impaginare e formattare il layout della pagina corrente e del menu di navigazione
+			- fogli di stile .css che gestiscono le media query per rendere il sito responsive per dispositivi mobile e tablet
+			- riferimento all'immagine favicon
+	-->
+	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../Stile/stilepagina.css">
+	<link rel="stylesheet" type="text/css" href="../Stile/stilemediaquerypagina.css">
+	<link rel="stylesheet" type="text/css" href="../Stile/stilemenu.css">
+	<link rel="stylesheet" type="text/css" href="../Stile/stilemediaquerymenu.css">
+	<link rel="stylesheet" type="text/css" href="../Stile/stilechisiamo.css">
+	<link rel="stylesheet" type="text/css" href="../Stile/stilemediaquerychisiamo.css">
+	<link rel="shortcut icon" type="image/png" href="../Immagini/favicon.ico"/>
+
+	<!--
+		Metatag per SEO:
+			- charset utilizzato
+			- descrizione 
+			- parole chiave
+			- autore del sito
+			- adattamento dei contenuti nei telefoni e nei table
+	-->
+	<meta charset="utf-8">
+	<meta name="description" content="Sito web dell'Associazione Artistica per Talenti Musicali Vivo per Lei">
+	<meta name="keywords" content="musica, corsi, eventi, music, arte, associazione, canto, strumenti musicali, registrazione, coro">
+	<meta name="author" content="Nada Cenci 730218">
+	<meta id="viewport" name="viewport" content ="width=device-width" />
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139981140-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+ 			 gtag('config', 'UA-139981140-1');
+		</script>
+	
+	<!--
+		Titolo della pagina
+	-->
+	<title>Chi siamo - Vivo per Lei</title>
+</head>
+<body>
+
+	<!-----------------------------Menu----------------------------------------------->
+
+	<!--
+		Codice per il menu di navigazione. Esso è composto da cinque voci in linea per il PC: 
+		Homepage, Chi siamo, Corsi, Eventi, Contattaci.
+
+		Nella versione mobile/tablet le cinque voci sono nascoste e sostiuite da una sola voce: Menu.
+		Al click di essa vengono mostrate (o vengono nascoste se già visibili) le cinque voci sopra elencate.
+
+		Il menu è creato attraverso la creazione di una lista di link che madano alla pagina specificata. La voce che rappresenta la pagina corrente ha l'id actived_menu che la rende in grassetto. 
+	-->
+
+	<nav>
+		<div class="menu-block" id="menu-mobile-tablet">
+			<ul class="nav-ul">
+				<li><a><label for="id-show-menu" class="show-menu">Menu</label></a></li>
+			</ul>
+		</div>
+		<input id="id-show-menu" type="checkbox" role="button">
+		<div class="menu-block" id="menu-desktop">
+			<ul class="nav-ul">
+				<li><a href="index.html"> &#9834; Home Page</a></li>
+				<li><a id="actived-menu" href="chi_siamo.html">&#9834; Chi siamo</a></li>
+				<li><a href="corsi.html">&#9834; I nostri corsi</a></li>
+				<li><a href="eventi.html">&#9834; Eventi</a></li>
+				<li><a href="contattaci.html">&#9834; Contattaci</a></li>
+			</ul>
+		</div>
+	</nav>
+	<br>
+	<br>
+	<br>
+
+	<!-----------------------------header----------------------------------------------->
+
+	<!-- 
+		Nella parte superiore del sito è presente un titolo con il nome della pagina e un'immagine con il logo dell'associazione artistica. Poi viene mostrata una linea orizzontale.
+	-->
+
+	<header>
+		<h1 id="title">Chi siamo</h1>
+		<a href="index.html"><img id="logo"  src="../Immagini/logodef.png"></a>
+		<hr>
+	</header>
+
+
+	<!-----------------------------Corpo della pagina----------------------------------------------->
+
+	<!--
+		Una breve descrizione dell'associazione artistica e dei suoi obiettivi. 
+		Sono indicate le collaborazioni (con i relativi link se esistenti) dell'associazione ed è presente un video di presentazione. C'è una breve presentazione della fondatrice e una galleria con le foto degli allievi.
+	-->
+
+	<br>
+	<div id="bodydiv">
+		<p> 
+			Vivo per Lei - Associazione Artistica per Talenti Musicali nasce nel 1996 nella citt&aacute; di Lodi con lo scopo di promuovere la musica in tutte le sue espressioni.
+		</p>
+		<p>L'associazione si rivolge ai giovani appassionati e ai professionisti.</p>
+		<p>Vivo per Lei vuole essere un mezzo creativo per tirare fuori la propria personalit&aacute;.</p>
+		<p>
+			Un canale i cui obiettivi sono: <b>arricchire le proprie competenze</b> e <b>creare nuovi legami</b> tra le persone e il mondo musicale.
+		</p>
+		<p>
+			Tra le nostre collaborazioni: 
+			<b>
+				<a href="https://tourmusicfest.it/it/" target="_new">Tour Music Fest</a>,
+				<a href="https://www.gerundia.com/" target="_new"> Accademia Gerundia</a>, 
+				<a href="https://www.gaffurio.it/" target="_new"> Accademia Gaffurio</a>, 
+				<a href="https://www.facebook.com/profile.php?id=100005225478419" target="_new">Ars Nostra</a>, 
+				Kantafestival, 
+				<a href="http://www.codue.it/Una_voce_per_Sesto.htm" target="_new"> UnaVocePerSesto.</a>
+			</b>
+		</p>
+		<hr>
+		<div id="founder">
+			<p><b>La nostra storia</b> (in breve)</p>
+			<p>
+				Nada Cenci nasce il 23 dicembre 1976 nella citt&aacute; di Lodi, all'et&aacute; di 8 anni si appassiona al canto e alla musica.
+			</p>
+			<p> 
+				Durante il suo percorso professionale si laurea in Canto Jazz presso il Conservatorio di Giuseppe Verdi di Milano e decide di fondare l'associazione Vivo per Lei per poter diffondere il valore della musica.
+			</p>
+			<p>
+				Insieme a lei collabora un &eacute;quipe di professionisti, i quali hanno maturato una buona esperienza in tutto ci&oacute; che riguarda le teorie e le tecniche di performance musicali.
+			</p>
+		</div>
+		<div align="center">
+			<video controls>
+				<source src="../Video/VIVO_PER_LEI.mp4" type="video/mp4" />
+				Il tuo browser non supporta questo video.
+			</video>
+		</div>
+	</div>
+	<div id="gallery">
+		<p>
+			I nostri allievi
+		</p>
+		<table id="desk">
+  			<tr>
+    			<td><img src="../Immagini/gallery1.jpg" title="Prove corali con la docente di Canto Moderno Laura Pizzi"></td>
+    			<td><img src="../Immagini/gallery2.jpg" title="Riccardo Pallaro - Premio Music Festival Contest 2019"></td>
+    			<td><img src="../Immagini/gallery3.jpg" title="Lezione di Chitarra Classica con il docente Marco Lura"></td>
+  			</tr>
+  			<tr>
+    			<td><img src="../Immagini/gallery4.jpg" title="Open day 2019 - Presentazione organizzata dai nostri ragazzi"></td>
+   				<td><img src="../Immagini/gallery5.jpg" title="Saggio di Natale 2017"></td>
+   				<td><img src="../Immagini/gallery6.jpg" title="La nostra Giulia - Saggio di Natale 2018"></td>
+ 			</tr>
+ 			<tr>
+    			<td><img src="../Immagini/gallery7.jpg" title="Tutti insieme per la musica - Concerto di beneficenza 2019"></td>
+   				<td><img src="../Immagini/gallery8.jpg" title="Prima lezione di pianforte con Nicholas"></td>
+   				<td><img src="../Immagini/gallery9.jpg" title="Docente esterna Andrea Millevolti - Musicista e cantante di prestigio nel territorio lombardo"></td>
+ 			</tr>
+		</table>
+
+		<div id="mob">
+			<img src="../Immagini/gallery1.jpg" title="Prove corali con la docente di Canto Moderno Laura Pizzi">
+			<img src="../Immagini/gallery2.jpg" title="Riccardo Pallaro - Premio Music Festival Contest 2019">
+			<img src="../Immagini/gallery3.jpg" title="Lezione di Chitarra Classica con il docente Marco Lura">
+			<img src="../Immagini/gallery4.jpg" title="Open day 2019 - Presentazione organizzata dai nostri ragazzi">
+			<img src="../Immagini/gallery5.jpg" title="Saggio di Natale 2017">
+			<img src="../Immagini/gallery6.jpg" title="La nostra Giulia - Saggio di Natale 2018">
+			<img src="../Immagini/gallery7.jpg" title="Tutti insieme per la musica - Concerto di beneficenza 2019">
+			<img src="../Immagini/gallery8.jpg" title="Prima lezione di pianforte con Nicholas">
+			<img src="../Immagini/gallery9.jpg" title="Docente esterna Andrea Millevolti - Musicista e cantante di prestigio nel territorio lombardo ">
+		</div>
+	</div>
+	
+	<!-----------------------------footer----------------------------------------------->
+	
+	<!--
+		Nella parte inferiore del sito sono presenti dati:
+			- Link con email fittizia al cui click si apre il programma di posta elettronica con una mail in cui è preimpostato l'indirizzo di destinazione.
+			- Link alla mappa del sito
+			- Immmagine dei loghi dei social networks con rispettivo link (Facebook, Instagram e YouTube)
+			- Copyright del sito
+	-->
+	<footer>
+		<hr>
+		<div id="footer-contact">
+			Email: <a id="mail-footer" href="mailto:nada.cenci@vivoperlei.it">nada.cenci@vivoperlei.it</a>
+		</div>
+		<div id="footer-maps">
+			<a id="mapsite-footer" href="mappa.html"> Mappa del sito </a>
+		</div>
+		<div id="footer-social">
+			Seguici su: 
+			<a href="https://www.facebook.com" target="_new"> <img class="social-logo" src="../Immagini/fb.png"></a>
+			<a href="https://www.instagram.com" target="_new"> <img class="social-logo" src="../Immagini/insta.png"></a>
+			<a href="https://www.youtube.com" target="_new"> <img class="social-logo" src="../Immagini/yt.png"></a>
+		</div>
+		<hr>
+		<div id="footer-copy"> 
+			Copyright  &copy; 2019 Nada Cenci 
+		</div>
+	</footer>
+	<br>
+	<br>
+	<br>
+	<!--
+		Banner policy dei cookie
+	-->
+	<script type="text/javascript" src="https://nibirumail.com/docs/scripts/nibirumail.cookie.min.js"> 
+    </script>
+	
+</body>
+</html>
